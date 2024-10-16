@@ -55,8 +55,8 @@ Thigs TodoApp é uma aplicação web completa que permite aos usuários gerencia
 ### Clonando o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/thigs-todoapp.git
-cd thigs-todoapp
+git clone https://github.com/0thigs/todo_app_homework.git
+cd todo_app_homework
 ```
 
 ### Instalando Dependências
