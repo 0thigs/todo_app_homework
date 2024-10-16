@@ -11,17 +11,22 @@ class TaskService {
     return this.tasks;
   }
 
-public addTask(name: string, description: string, dueDate: string): Task | Error {
+  public addTask(name: string, description: string, dueDate: string): Task | Error {
     if (this.tasks.some(task => task.name === name)) {
-        return new Error('A task with this name already exists.');
+      return new Error('A task with this name already exists.');
     }
     const newTask: Task = { id: this.idCounter++, name, description, dueDate, status: false };
     this.tasks.push(newTask);
     return newTask;
-}
+  }
 
-
-  public updateTask(id: number, name: string, description: string, dueDate: string, status: boolean): Task | Error {
+  public updateTask(
+    id: number,
+    name: string,
+    description: string,
+    dueDate: string,
+    status: boolean
+  ): Task | Error {
     const index = this.tasks.findIndex(t => t.id === id);
     if (index === -1) {
       return new Error('Task not found.');

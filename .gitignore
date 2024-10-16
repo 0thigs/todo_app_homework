@@ -2,3 +2,9 @@
 .DS_Store
 node_modules
 .env
+.next  
+api/node_modules
+api/.env
+api/.next
+web/node_modules
+web/.next
